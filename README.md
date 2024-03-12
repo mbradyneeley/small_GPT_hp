@@ -1,4 +1,14 @@
 # small_GPT_hp
-Using torch, built from scratch a small character based decoder only language model. Trained on text from Harry Potter.
+Using torch, built from scratc some small decoder only language models. Trained just on the texts from the Harry Potter novels.
 
-The nanoGPT .txt files contain output, the first trained on the 1st and 6th novel and the file labeled all_books on all HP novels.
+This model can generate infinite Harry Potter-like text.
+
+There are two models:
+1. `small_GPT_hp_bpe_tokenizer.py` has a byte pair encoded tokenizer. Built the tokenizer off of similar structure as GPT-4 (thanks to Karpathy's minbpe)
+   * This model produced the output `harry_potter_text_nano_GPT_all_books_bpe_tokenizer.txt` which at a glance is an improvement over the character level model's output. Similar word structure and word invention like that in the books.
+2. `small_GPT_hp.py` has a small character level tokenizer. Simply mapped characters to integers.
+   * This model produced the output `harry_potter_text_nano_GPT_char_level_tokenizer.txt` as well as the other output file. Looks kind of Harry Potterish.
+
+
+
+The nanoGPT .txt files contain output.
