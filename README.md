@@ -9,6 +9,4 @@ There are two models:
 2. `small_GPT_hp.py` has a small character level tokenizer. Simply mapped characters to integers.
    * This model produced the output `harry_potter_text_nano_GPT_char_level_tokenizer.txt` based on books 1 & 6 and `/harry_potter_text_nano_GPT_all_books.txt` was trained on all 7 novels. Looks kind of Harry Potterish.
 
-
-
-The nanoGPT .txt files contain output.
+![alt text](DALLE_HP_IMAGE.png)
